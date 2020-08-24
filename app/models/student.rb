@@ -1,6 +1,6 @@
 class Student < ActiveRecord::Base
   
-  def post_summary
+  def to_s
     self.first_name + self.last_name
   end
   
