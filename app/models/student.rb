@@ -1,7 +1,7 @@
 class Student < ActiveRecord::Base
   
   def post_summary
-    self.title + " - " + self.description
+    self.first_name + self.last_name
   end
   
 end
